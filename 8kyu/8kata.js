@@ -134,4 +134,18 @@ function invert(array) {
                      return array.map( x => x === 0 ? x : -x);
                   }
 
-// 11. 
+// 11. Remove exclamation marks
+function removeExclamationMarks(s) {
+  return s.replace(/!/gi, '');
+}
+
+// 12. Number of People in the Bus
+var number = function(busStops){
+  var totalPeople = 0;
+  for (var i=0; i<busStops.length; i++) {
+    totalPeople += busStops[i][0];
+    totalPeople -= busStops[i][1];
+  }
+  return totalPeople;
+}
+13. 
