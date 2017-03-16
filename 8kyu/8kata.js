@@ -166,7 +166,7 @@ function stairsIn20(s){
   return sum * 20;
 }
 
-// Pre-FizzBuzz Workout #1
+//15. Pre-FizzBuzz Workout #1
 function preFizz(n) {
   var arr = [];
   for (var i = 1; i <= n; i++){
@@ -174,3 +174,18 @@ function preFizz(n) {
   }
   return arr;
 }
+
+// 16. Keep up the hoop
+function hoopCount (n) {
+  return (n <= 10) ? 'Keep at it until you get it' : 'Great, now move on to tricks';
+}
+
+function hoopCount (n) {
+  if(n >= 10) {
+    return "Great, now move on to tricks";
+  } else if(n < 10) {
+    return "Keep at it until you get it";
+  }
+}
+
+// 17.
