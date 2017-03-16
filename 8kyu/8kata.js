@@ -148,4 +148,29 @@ var number = function(busStops){
   }
   return totalPeople;
 }
-13. 
+
+// 13. Keep Hydrated!
+Keep Hydrated!
+function litres(time) {
+  return Math.floor(time/2);
+}
+
+// 14. How many stairs will Suzuki climb in 20 years?
+function stairsIn20(s){
+  var sum = 0;
+  for(var i = 0; i < s.length; i++){
+    for(var j = 0; j < s[i].length; j++){
+      sum += s[i][j];
+    }
+  }
+  return sum * 20;
+}
+
+// Pre-FizzBuzz Workout #1
+function preFizz(n) {
+  var arr = [];
+  for (var i = 1; i <= n; i++){
+    arr.push(i);
+  }
+  return arr;
+}
