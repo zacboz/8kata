@@ -188,4 +188,25 @@ function hoopCount (n) {
   }
 }
 
-// 17.
+// 17. Simple Fun #40: Timed Reading
+function timedReading(maxLength, text) {
+  var count = 0;
+  if (text === "..."){
+    return 0;
+  } else {
+    text = text.replace(/(~|`|!|@|#|$|%|^|&|\*|\(|\)|{|}|\[|\]|;|:|\"|'|<|,|\.|>|\?|\/|\\|\||-|_|\+|=)/g,"");
+    var word = text.split(' ');
+    console.log(word);
+
+    for(var j = 0; j < word.length; j++){
+      if(word[j].length <= maxLength){
+        console.log(word[j]);
+        count += 1;
+        console.log(count);
+      }
+    }
+    return count;
+  }
+}
+
+// 18.
