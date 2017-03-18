@@ -209,4 +209,20 @@ function timedReading(maxLength, text) {
   }
 }
 
-// 18.
+// 18. Simple Fun #20: First Reverse Try
+function firstReverseTry(arr) {
+  var newArr = []
+  if(arr.length === 0){
+    return newArr;
+  } else if (arr.length === 1){
+    newArr.push(arr[0]);
+    return newArr;
+  } else {
+    newArr = arr.splice(1, (arr.length - 2));
+    newArr.unshift(arr[arr.length-1]);
+    newArr.push(arr[0]);
+    return newArr;
+  }
+}
+
+//19. 
