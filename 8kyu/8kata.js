@@ -225,4 +225,11 @@ function firstReverseTry(arr) {
   }
 }
 
-//19. 
+//19. Simple Fun #17: Rounders
+function rounders(value) {
+  power = value.toString().length - 1;
+  for (i = 0; i < power; i++) {
+    value = Math.round(value / 10);
+  }
+  return value * Math.pow(10, power);
+}
