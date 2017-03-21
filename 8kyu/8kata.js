@@ -233,3 +233,19 @@ function rounders(value) {
   }
   return value * Math.pow(10, power);
 }
+
+// 20. mumbler
+function accum(s) {
+  var letters = s.split('');
+  var result = [];
+  for (var i = 0; i < letters.length; i++) {
+    result.push(letters[i].toUpperCase() + Array(i + 1).join(letters[i].toLowerCase()));
+  }
+  return result.join('-');
+}
+
+// 21. Exclamation marks series #6: Remove n exclamation marks in the sentence from left to right
+function remove(s,n){
+  for (let i = 0; i < n; i++) s = s.replace(/\!/, '');
+  return s;
+}
