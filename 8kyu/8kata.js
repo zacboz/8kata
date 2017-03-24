@@ -251,6 +251,7 @@ function remove(s,n){
 }
 
 // 22. Dollars and Cents
+// Use toFixed to convert num to string keeping only two decimals
 function formatMoney(num){
     return "$" + num.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1")
 }
@@ -259,4 +260,14 @@ function formatMoney(amount){
   return '$' + amount.toFixed(2);
 }
 
-// 23.
+// 23. Jenny's secret message
+// when name == Johnny is true use my love, false use name (true statement : false statement)
+function greet(name){
+  return "Hello, " + (name == "Johnny" ? "my love" : name) + "!";
+}
+
+// 24. Holiday VIII - Duty Free
+// Math.floor rounds down to nearest whole number
+function dutyFree(normPrice, discount, hol){
+  return Math.floor(hol/(normPrice *(discount/100)));
+}
