@@ -249,3 +249,14 @@ function remove(s,n){
   for (let i = 0; i < n; i++) s = s.replace(/\!/, '');
   return s;
 }
+
+// 22. Dollars and Cents
+function formatMoney(num){
+    return "$" + num.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1")
+}
+// or
+function formatMoney(amount){
+  return '$' + amount.toFixed(2);
+}
+
+// 23.
