@@ -297,4 +297,37 @@ function simpleMultiplication(num){
   }
 }
 
-//31.
+//31. Fizz Buzz Cuckoo Clock
+
+function fizzBuzzCuckooClock(time) {
+  var arr = time.split(':');
+  var count = 'Cuckoo';
+  var hour;
+  console.log(arr);
+  if(arr[1] === '00'){
+    if(arr[0] === '00'){
+      hour = 12;
+    } else if (arr[0] > 12){
+      hour = arr[0] -12;
+    } else {
+      hour = arr[0];
+    }
+    console.log(hour);
+    for(var i = 0; i < hour -1; i++){
+      count += ' Cuckoo';
+    }
+    return count;
+  } else if (arr[1] === '30'){
+    return 'Cuckoo';
+  } else if((arr[1] % 3 === 0) && (arr[1] % 5 === 0)){
+    return 'Fizz Buzz';
+  } else if (arr[1] % 5 === 0){
+    return 'Buzz';
+  } else if (arr[1] % 3 === 0){
+    return 'Fizz';
+  } else {
+    return 'tick';
+  }
+}
+
+// 32.
