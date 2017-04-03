@@ -272,7 +272,7 @@ function dutyFree(normPrice, discount, hol){
   return Math.floor(hol/(normPrice *(discount/100)));
 }
 
-// .25 Are they opposite?
+// 2.5 Are they opposite?
 // sometimes its easier to establish what is false and have everything else be true
 function isOpposite(s1,s2){
   if(s1 === s2 || s1.toLowerCase() !== s2.toLowerCase()) return false; //
@@ -281,3 +281,20 @@ function isOpposite(s1,s2){
   }
   return true;
 }
+
+// 30. Simple multiplication
+//shorter way to write if statement
+function simpleMultiplication(n) {
+    return n * (n % 2 ? 9 : 8);
+}
+//my solution
+function simpleMultiplication(num){
+  var newNum;
+  if (num % 2 === 0){
+    return newNum = num * 8;
+  } else {
+    return newNum = num * 9;
+  }
+}
+
+//31.
